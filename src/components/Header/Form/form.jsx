@@ -14,6 +14,7 @@ const [state, setState] = useState('');
 const [city, setCity] = useState('');
 const [residence, setResidence] = useState('');
 const [employee, setEmployee] = useState('')
+const [Desc, setDesc] = useState('')
 
 function handleName(event){
   setName(event.target.value)
@@ -44,6 +45,10 @@ function handleState(event){
 }
 
 
+function handleDesc(event){
+  setDesc(event.target.value)
+}
+
 function handleForm(event){
   event.preventDefault();
   let user = {
@@ -52,6 +57,7 @@ function handleForm(event){
     phone: phone,
     link: link,
     state: state,
+    Desc: Desc,
     city: city,
     residence: residence,
     employee: employee
@@ -123,7 +129,7 @@ return (
           </div>
           <div className="form-group">
             <label>Izoh <span>*</span></label>
-            <textarea placeholder="Kompaniya haqida izoh qoldiring" required></textarea>
+            <textarea placeholder="Kompaniya haqida izoh qoldiring" required onChange={handleDesc}></textarea>
           </div>
           <div className="form-buttons">
             <button type="button" className="back-btn">Ortga</button>
