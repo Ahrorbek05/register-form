@@ -1,0 +1,291 @@
+body {
+    background: #d5daf2;
+    font-family: system-ui;
+}
+
+.form-container {
+    width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 80px;
+    height: 80px;
+    /* border:1px solid #3a4fb0; */
+    border-radius: 50%;
+    background: linear-gradient(45deg red, blue, green);
+}
+
+.user span a{
+    text-decoration: none;
+    color: rgba(83, 97, 228, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.24px;
+    text-align: left;
+
+} 
+
+h1 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 41.6px;
+    text-align: left; 
+    margin-top: 10px;   
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 450;
+    line-height: 20.8px;
+    text-align: left;
+    color: rgba(179, 179, 179, 1);    
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.profile-pic span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.71px;
+    text-align: left;
+}
+
+label span{
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 17.71px;
+    text-align: left;
+    color: red;
+}
+
+input::placeholder{
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 17.71px;
+    text-align: left;
+    color: rgba(110, 109, 119, 1);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 12px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.link-btn {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.link-btn i {
+    color: #888;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.region{
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.region .form-group1{
+    width: 340px;
+    padding: 10px;
+}
+
+.region .form-group2{
+    width: 340px;
+    padding: 10px;
+}
+
+.back-btn,
+.next-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn {
+    background: #ddd;
+}
+
+.next-btn {
+    background: #4A60D0;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #ccc;
+}
+
+.next-btn:hover {
+    background: #3a4fb0;
+}
+
+
+/* footer button style */
+footer button{
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
+
+HTML Iframe
+footer .keyingisi {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+footer .next-btn{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+footer .next-btn:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+footer .next-btn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+footer .next-btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+  
+/* form button hover */
+
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    background-color: #fff;
+    color: #777;
+}
+
+form button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+form button {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.back-btn {
+    cursor: pointer;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .back-btn:hover {
+    color: #fff;
+    box-shadow: 0 0 40px 40px #5361E4 inset;
+  } 
