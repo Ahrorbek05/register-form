@@ -63,7 +63,7 @@ function handleForm(event){
     employee: employee
   }
 
-  console.log(user);
+  localStorage.setItem('user', JSON.stringify(user))
 
 }
 
@@ -74,7 +74,7 @@ return (
         <p>Kompaniya haqidagi ma’lumotlarni kiriting</p>
         <form>
           <div className="user">
-            <img src="./src/images/ellipse.png" alt="ellipse" />
+            <img src="../src/images/ellipse.png" alt="ellipse" />
             <span><a href="yuklash">Yuklash</a></span>
           </div>
           <div className="form-group">
@@ -92,11 +92,11 @@ return (
           <div className="form-group">
             <label>Linklar <span>*</span></label>
             <div className="social-links">
-              <button className="link-btn"><img src="./src/images/icon1.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="./src/images/instagram.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="./src/images/telegram.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="./src/images/facebook.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="./src/images/github.svg" alt="icons" /></button>
+              <button className="link-btn"><img src="../src/images/icon1.svg" alt="icons" /></button>
+              <button className="link-btn"><img src="../src/images/instagram.svg" alt="icons" /></button>
+              <button className="link-btn"><img src="../src/images/telegram.svg" alt="icons" /></button>
+              <button className="link-btn"><img src="../src/images/facebook.svg" alt="icons" /></button>
+              <button className="link-btn"><img src="../src/images/github.svg" alt="icons" /></button>
             </div>
           </div>
           <div className="region">
