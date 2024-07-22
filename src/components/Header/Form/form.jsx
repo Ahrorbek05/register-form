@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import '../Form/form.css';
-
+import ellipse from '../images/ellipse.png';
+import icon1 from '../images/icon1.svg';
+import instagram from '../images/instagram.svg';
+import telegram from '../images/telegram.svg';
+import facebook from '../images/facebook.svg';
+import github from '../images/github.svg';
 
 
 
@@ -74,7 +79,7 @@ return (
         <p>Kompaniya haqidagi ma’lumotlarni kiriting</p>
         <form>
           <div className="user">
-            <img src="../src/images/ellipse.png" alt="ellipse" />
+            <img src={ellipse} alt="ellipse" />
             <span><a href="yuklash">Yuklash</a></span>
           </div>
           <div className="form-group">
@@ -92,11 +97,11 @@ return (
           <div className="form-group">
             <label>Linklar <span>*</span></label>
             <div className="social-links">
-              <button className="link-btn"><img src="../src/images/icon1.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="../src/images/instagram.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="../src/images/telegram.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="../src/images/facebook.svg" alt="icons" /></button>
-              <button className="link-btn"><img src="../src/images/github.svg" alt="icons" /></button>
+              <button className="link-btn"><img src={icon1} alt="icons" /></button>
+              <button className="link-btn"><img src={instagram} alt="icons" /></button>
+              <button className="link-btn"><img src={telegram} alt="icons" /></button>
+              <button className="link-btn"><img src={facebook} alt="icons" /></button>
+              <button className="link-btn"><img src={github} alt="icons" /></button>
             </div>
           </div>
           <div className="region">
